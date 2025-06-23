@@ -9,7 +9,7 @@ EXEC = buscaminas
 all: $(EXEC)
 
 $(EXEC): $(SRC)
- $(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 clean:
- rm -f $(EXEC) src/*.o
+	rm -f $(EXEC) src/*.o
