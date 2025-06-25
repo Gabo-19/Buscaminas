@@ -21,6 +21,19 @@ typedef struct {
     int nearbyMineCount;
 } sTile;
 
+#define MAX_TEXTURES 1
+typedef enum {
+	TEXTURE_FLAG = 0
+	
+} texture_asset;
+
+extern Texture2D textures[MAX_TEXTURES];
+extern sTile grid[COLS][ROWS];
+extern int revealedTilesCount;
+extern int minesPresentCount;
+
+
+
 void GameStartUp();
 void GameShutdown();
 void GameReset();
@@ -30,6 +43,10 @@ void ResetTiles();
 void RenderTiles();
 void RenderTile(sTile tile);
 int CountNearbyMines(int col, int row);
+bool IsTileIndexValid(int, int);
+void RevealTilesFrom(int, int);
+void FlagTile(int, int);
+void RevealTile(int, int);
 
 #endif
 
