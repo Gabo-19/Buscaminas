@@ -269,7 +269,7 @@ void GameRender() {
     switch (gameState) {
     case STATE_MAIN_MENU:
 
-        DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, DARKBLUE);
+        DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, DARKGREEN);
         DrawText("BUSCAMINAS", 20, 20,  40, WHITE); // x=20, y=20, tamano 40 de fuente, color blanco; y asi para los demas
         DrawText("[N]ueva Partida", 120, 220, 20, WHITE);
         DrawText("[O]pciones", 120, 250, 20, WHITE);
@@ -279,30 +279,30 @@ void GameRender() {
 
     case STATE_OPTIONS_MENU:
 
-        DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, DARKBLUE);
+        DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, DARKGREEN);
         DrawText("BUSCAMINAS : : OPCIONES", 20, 20,  40, WHITE);
         DrawText("[S]onido", 120, 220, 20, WHITE);
         if (isSoundEnabled) {
-            DrawText("ENCENDIDO", 280, 220, 20, YELLOW);
+            DrawText("ON", 280, 220, 20, YELLOW);
             DrawText(" / ", 310, 220, 20, WHITE);
-            DrawText("APAGADO", 350, 220, 20, WHITE);
+            DrawText("OFF", 350, 220, 20, WHITE);
         }
         else {
-            DrawText("ENCENDIDO", 280, 220, 20, WHITE);
+            DrawText("ON", 280, 220, 20, WHITE);
             DrawText(" / ", 310, 220, 20, WHITE);
-            DrawText("APAGADO", 350, 220, 20, YELLOW);
+            DrawText("OFF", 350, 220, 20, YELLOW);
         }
 
         DrawText("[M]usica", 120, 250, 20, WHITE);
         if (isMusicEnabled) {
-            DrawText("ENCENDIDO", 280, 250, 20, YELLOW);
+            DrawText("ON", 280, 250, 20, YELLOW);
             DrawText(" / ", 310, 250, 20, WHITE);
-            DrawText("APAGADO", 350, 250, 20, WHITE);
+            DrawText("OFF", 350, 250, 20, WHITE);
         }
         else {
-            DrawText("ENCENDIDO", 280, 250, 20, WHITE);
+            DrawText("ON", 280, 250, 20, WHITE);
             DrawText(" / ", 310, 250, 20, WHITE);
-            DrawText("APAGADO", 350, 220, 20, YELLOW);
+            DrawText("OFF", 350, 250, 20, YELLOW);
         }
 
         break;

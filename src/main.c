@@ -14,7 +14,7 @@ float timeGameEnded = 0;
 
 const char* labelGameWin = "GANASTE! :D";
 const char* labelGameLose = "PERDISTE! :C";
-const char* labelEnter = "PULSE ENTER PARA ACCEDER AL MENU PRINCIPAL";
+const char* labelEnter = "PULSE ENTER PARA IR AL MENU";
 
 bool isSoundEnabled = true;
 bool isMusicEnabled = true;
