@@ -2,22 +2,7 @@
 #include "raymath.h"
 #include "juego.h"
 
-const int TILE_WIDTH = SCREEN_WIDTH / COLS;
-const int TILE_HEIGHT = SCREEN_HEIGHT / ROWS;
 
-sTile grid[COLS][ROWS];
-int revealedTilesCount;
-int minesPresentCount;
-
-float timeGameStarted;
-float timeGameEnded;
-
-const char* labelGameWin = "GANASTE! :D";
-const char* labelGameLose = "PERDISTE! :C";
-const char* labelEnter = "PULSE ENTER PARA ACCEDER AL MENU PRINCIPAL";
-
-bool isSoundEnabled = true;
-bool isMusicEnabled = true;
 
 
 void GamePlaySound(int sound) {
